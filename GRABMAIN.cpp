@@ -3,6 +3,7 @@
 #include"include/BookGrabFailed.h"
 #include"include/BookGrabSuccess.h"
 #include"include/Car.h"
+#include"include/Choice.h"
 #include"include/Done.h"
 #include"include/Driver.h"
 #include"include/DriverAccount.h"
@@ -34,7 +35,7 @@ int main() {
     {
         wait.waitting();
     }
-    int switchCase ;
+/*    int switchCase ;
     UnBook deniedCar;
     Done allDone;
     cin>>switchCase;
@@ -47,6 +48,6 @@ int main() {
             cout<<"Success"<<endl;
             allDone.allDone();
             break;
-    }
+    }*/
 	return 0;
 }
