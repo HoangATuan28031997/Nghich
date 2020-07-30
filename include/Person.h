@@ -1,4 +1,6 @@
-using namepsace std;
+#pragma once
+#include<string>
+using namespace std;
 class Person {
     protected :
         string name;
@@ -6,7 +8,10 @@ class Person {
         string bankAccount;
 		string phoneNumber;
         int age;
+		int humanID ;
     public:
         void setInfo() ;
-        void getInfo() ;
+		int setID();
+		void getInfo();
+		int getID(int ID);
 }; 

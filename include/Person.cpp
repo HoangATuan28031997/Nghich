@@ -1,25 +1,30 @@
+#include<iostream>
 #include"Person.h"
- 
+using namespace std;
 void Person::setInfo() {
 	cout<<"Name = : ";
     getline(cin,this->name);
-    cin.ignore();
     cout<<"Phone = : ";
     getline(cin,this->phoneNumber);
-    cin.ignore();
-    cout<<"Email = : ";
-    getline(cin,this->email);
-	cin.ignore();
-	cout<<"Bank Account = : ";
-	getline(cin,this->bankAccount);
-	cin.ignore();
 	cout<<"Age = : ";
 	cin>>this->age;
+	cin.ignore();
+	cout<<"Email = : ";
+    getline(cin,this->email);
+
+}
+int Person::setID() {
+    this->humanID=10000+rand()%90000;
 }
 
 void Person::getInfo() {
 	cout<<"Name : "<<this->name<<endl;
     cout<<"Email = : "<<this->email<<endl;
     cout<<"Phone = : "<<this->phoneNumber<<endl;
-	cout<<"Bank Account = : "<<this->bankAccount<<endl;
+	cout<<"Age = : " <<this->age<<endl;
+	cout<<"ID = : " <<this->humanID<<endl;
+}
+int Person::getID(int ID) {
+	ID = this->humanID;
+	return ID;
 }
